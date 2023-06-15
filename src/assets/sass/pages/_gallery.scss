@@ -1,0 +1,62 @@
+.gallery {
+    width: 100%; 
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    border-style: none;
+    border-radius: 1rem;
+    background-image: $background-image-gradient;
+}
+
+.container {
+    width: 100%; 
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+}
+
+.card {
+
+    width: 400px;
+    height: 600px;
+    margin: 25px;
+    padding: 25px;
+    
+
+    border-style: none;
+    border-radius: 1rem;
+    background-color: $background-colour-white;
+    @include box-shadow;
+    text-decoration: none;
+    color: $font-text-colour-black;
+
+    animation: appear ($anim-duration*3) both;
+
+    @for $i from 1 through $num-bars {
+        &--#{$i} {
+            animation-delay: ($anim-delay * $i);
+        }
+    }
+
+    &_image {
+        width: 100%;
+        height: 60%;
+        object-fit: cover;
+        border-style: none;
+        border-radius: 1rem;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    &_content {
+        width: 100%;
+        height: 40%;
+        border-style: none;
+        border-radius: 1rem;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        background-color: $background-colour-very-light-gray;
+    }
+}

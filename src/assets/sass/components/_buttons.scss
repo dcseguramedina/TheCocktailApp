@@ -1,0 +1,17 @@
+.btn {    
+    margin-bottom: 2.5rem;
+    padding: 1rem 1.5rem;
+    background-image: $background-image-gradient;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;       
+    color: $font-text-colour-white;        
+    cursor: pointer; 
+    @include box-shadow;      
+}
+
+.btn:hover {
+    opacity: 0.9;
+    @include dark-box-shadow;
+}
