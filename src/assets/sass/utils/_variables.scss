@@ -1,0 +1,27 @@
+//Main colours
+$colour-primary: #7f4185;
+$colour-secondary: #e7a20e;
+$colour-tertiary: #eb9797;
+
+//Backgrownd colors
+$background-colour-white: #FFFFFF;
+$background-colour-very-light-gray: #F6F6F6;
+$background-colour-light-gray: #DFDFDF;
+$background-colour-dark-gray: #353535;
+
+$background-image-gradient: linear-gradient(to bottom, $colour-primary, $colour-secondary);
+$background-image-click-btn: linear-gradient(to top left, $colour-primary, $colour-secondary);
+
+//Text colours
+$font-text-colour-black: #000000;
+$font-text-colour-gray: #666666;
+$font-text-colour-white: #FFFFFF;
+
+// Media Queries
+$breakpoints: (
+    mobile: 576px,
+    tablete: 768px,
+    desktop: 992px,
+    large-desktop: 1200px,
+    x-large-desktop: 1400px
+);

@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-family: "Shrikhand", Roboto;
+  line-height: 1.5;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Shrikhand";
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: Roboto;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+h3 {
+  font-family: Roboto;
+  color: #000000;
+  font-weight: bold;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-family: Roboto;
+  color: #666666;
+  font-weight: lighter;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+p {
+  font-family: Roboto;
+}/*# sourceMappingURL=main.css.map */
