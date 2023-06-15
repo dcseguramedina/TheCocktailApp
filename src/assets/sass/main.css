@@ -1,20 +1,16 @@
-// Reset CSS
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-// Basic config
 :root {
-  font-family: 'Shrikhand', Roboto;
+  font-family: "Shrikhand", Roboto;
   line-height: 1.5;
   font-size: 16px;
   font-weight: 400;
-
   color: #000000;
   background-color: #ffffff;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -38,8 +34,8 @@ body {
 }
 
 h1 {
-  font-family: 'Shrikhand';
-  color: $font-text-colour-black;
+  font-family: "Shrikhand";
+  color: #000000;
   font-weight: bold;
   font-size: 1.75rem;
   line-height: 1.5;
@@ -47,7 +43,7 @@ h1 {
 
 h2 {
   font-family: Roboto;
-  color: $font-text-colour-black;
+  color: #000000;
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -55,7 +51,7 @@ h2 {
 
 h3 {
   font-family: Roboto;
-  color: $font-text-colour-black;
+  color: #000000;
   font-weight: bold;
   font-size: 1.1rem;
   line-height: 1.2;
@@ -63,7 +59,7 @@ h3 {
 
 h4 {
   font-family: Roboto;
-  color: $font-text-colour-gray;
+  color: #666666;
   font-weight: lighter;
   font-size: 1rem;
   line-height: 1.2;
@@ -71,4 +67,4 @@ h4 {
 
 p {
   font-family: Roboto;
-}
+}/*# sourceMappingURL=main.css.map */
