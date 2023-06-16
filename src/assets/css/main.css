@@ -138,6 +138,7 @@ main {
 .tutorial {
   width: 100%;
   height: 150px;
+  margin-bottom: 25px;
   padding: 25px;
   border-style: none;
   border-radius: 10px;
@@ -150,6 +151,7 @@ main {
 .gallery {
   width: 100%;
   height: auto;
+  margin-bottom: 25px;
   border-style: none;
   border-radius: 10px;
   background-image: linear-gradient(to top, #D663CA, #F1C762);
@@ -192,4 +194,12 @@ main {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   background-color: #F6F6F6;
+}
+
+.card_title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
