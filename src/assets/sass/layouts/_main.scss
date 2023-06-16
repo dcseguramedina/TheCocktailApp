@@ -1,5 +1,10 @@
 main {
     width: 100%;
     height: auto;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
             
 }
