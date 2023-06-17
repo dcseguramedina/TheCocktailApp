@@ -1,14 +1,13 @@
 .gallery {
     width: 100%; 
-    height: auto;
-    
+    height: auto;    
 
     border-style: none;
     border-radius: 10px;
     background-image: $background-image-gradient;
 }
 
-.gallery_items {
+.gallery_cards {
     width: 100%; 
     padding: 25px;
     
@@ -29,13 +28,13 @@
     text-decoration: none;
     color: $font-text-colour-black;
 
-    // animation: appear ($anim-duration*3) both;
+    animation: appear ($anim-duration*3) both;
 
-    // @for $i from 1 through $num-bars {
-    //     &--#{$i} {
-    //         animation-delay: ($anim-delay * $i);
-    //     }
-    // }
+    @for $i from 1 through $num-bars {
+        &--#{$i} {
+            animation-delay: ($anim-delay * $i);
+        }
+    }
 
     &_image {
         width: 100%;
