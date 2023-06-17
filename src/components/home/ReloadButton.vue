@@ -1,11 +1,13 @@
 <template>
-    <button class="btn" @click="reloadPage">Let's go for another round</button>    
+    <button class="btn" @click="reloadPage">{{ reloadMessage }}</button>    
 </template>
   
 <script setup>
-// const props = defineProps({
-//   buttonText: String, 
-// })
+import {defineProps} from 'vue'
+
+const props = defineProps({
+   reloadMessage: String, 
+})
 
 const reloadPage = () => {
     window.location.reload()
