@@ -1,6 +1,6 @@
 .tutorial {
     width: 100%; 
-    height: 150px;
+    height: 130px;
     margin-bottom: 25px;
     padding: 25px;
 
@@ -10,5 +10,15 @@
 
     &_text {        
         color: $font-text-colour-gray;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .tutorial {
+        height: auto;
+    }
+
+    .tutorial_text {
+        font-size: 18px;
     }
 }

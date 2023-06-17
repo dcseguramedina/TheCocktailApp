@@ -5,22 +5,21 @@
 
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
 
     background-color: $background-colour-white;
+
     
     &_logo{
-        width: 18%;
-        height: 100%;
-        margin: 0;
-        padding: 20px;
+        width: 80%;
+        height: 100;
     }
-    
-    &_slogan {
-        width: 50%;
-        height: 100%;
-        margin: 0;
-        padding: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .header {
+        height: 150px;
+        padding: 0;
     }
 }

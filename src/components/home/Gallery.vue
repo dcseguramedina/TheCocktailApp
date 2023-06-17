@@ -8,11 +8,11 @@
                     <div class="card_content">
                         <div class="card_title">
                             <h3>{{ drink.title }}</h3>
+                            <p>{{  drink.category }}</p>
                         </div>
-                        <div class="card_description" v-if="!display_div">
-                            <p>{{ drink.category }}</p>
-                            <p>ingredients</p>
-                            <p>{{ drink.instructions }}</p>
+                        <div class="card_description">
+                            <p><strong>Ingredients:</strong></p>
+                            <p><strong>Instructions:</strong> {{ drink.instructions }}</p>
                         </div>
                     </div>
                 </div>
@@ -37,8 +37,10 @@ export default {
     },
     data() {
         return {
-            listOfDrinks: []
+            listOfDrinks: [],
+            display_div: false
         }
+
     },
     methods: {
         getDrinks() {
@@ -60,6 +62,9 @@ export default {
                         alert(`Une erreur s'est produite. Veuillez réessayer`);
                     })
             }
+        },
+        toggleDiv() {
+            this.display_div = !this.display_div;
         }
     },
     mounted() {

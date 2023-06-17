@@ -9,6 +9,7 @@
 
 body {
   max-width: 1400px;
+  min-width: 375px;
   height: 100vh;
   margin: auto;
 
@@ -39,7 +40,7 @@ h2 {
   font-family: Roboto;
   color: $font-text-colour-black;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -47,11 +48,13 @@ h3 {
   font-family: Roboto;
   color: $font-text-colour-black;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.2;
 }
 
 p {
+  padding: 5px;
+  
   font-family: Roboto;
   font-size: 14px;
 }

@@ -1,5 +1,5 @@
 <template>
-    <button class="btn" @click="reloadPage">{{ text }}</button>    
+    <button class="btn" @click="reloadPage"><strong>{{ text }}</strong></button>    
 </template>
   
 <script>
