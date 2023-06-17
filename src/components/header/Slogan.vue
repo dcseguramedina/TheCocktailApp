@@ -1,11 +1,13 @@
 <template>
-    <h1 class="slogan">{{title}}</h1>   
+    <h1 class="slogan">{{ title }}</h1>   
 </template>
 
-<script setup>
-const props = defineProps({
-  title: String, 
-})
+<script>
+export default {
+  props: {
+    title: String
+  }
+}
 </script>
 
 <style lang="scss">

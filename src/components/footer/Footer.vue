@@ -1,16 +1,17 @@
 <template>
     <footer class="footer">
         <div class="footer_text">
-            <Copyright :msg="text"/>
+            <Copyright text="© 2023 The Cocktail App. All rights reserved"/>
         </div>                
     </footer>
 </template>
 
-<script setup>
-import {ref} from 'vue'
+<script>
 import Copyright from './Copyright.vue'
 
-const text = ref("© 2023 The Cocktail App. All rights reserved")
+export default {
+  components: { Copyright }
+}
 </script>
 
 <style lang="scss">

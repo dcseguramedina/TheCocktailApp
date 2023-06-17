@@ -1,7 +1,11 @@
 .slogan {
     width: 100%;
     height: 100%;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
     
     font-size: 48px;
-    color: $font-text-colour-gray;
+    color: $colour-primary;
 }

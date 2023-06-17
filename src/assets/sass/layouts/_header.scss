@@ -1,6 +1,8 @@
 .header {
     width: 100%;
-    height: 200px;
+    height: 250px;
+    padding: 25px;
+
     display: flex;
     flex-direction: row;
     justify-content: left;
@@ -11,17 +13,14 @@
     &_logo{
         width: 18%;
         height: 100%;
+        margin: 0;
         padding: 20px;
     }
     
     &_slogan {
         width: 50%;
         height: 100%;
-        padding: 80px;
+        margin: 0;
+        padding: 20px;
     }
 }
-
-.fa-solid {
-    color: $font-text-colour-gray;
-}
-

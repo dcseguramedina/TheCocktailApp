@@ -17,7 +17,7 @@
                 </div>
             </Card>
         </div>
-        <ReloadButton />
+        <ReloadButton text="I'm still thirsty" />
     </section>
 </template>
   
@@ -28,7 +28,7 @@ import ReloadButton from '../home/ReloadButton.vue';
 
 
 export default {
-    components: { Card },
+    components: { Card, ReloadButton },
 
     data() {
         return {

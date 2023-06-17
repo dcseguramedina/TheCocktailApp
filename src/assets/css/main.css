@@ -96,7 +96,7 @@ main {
 
 .header {
   width: 100%;
-  height: 200px;
+  height: 250px;
   padding: 25px;
   display: flex;
   flex-direction: row;
@@ -107,11 +107,13 @@ main {
 .header_logo {
   width: 18%;
   height: 100%;
+  margin: 0;
   padding: 20px;
 }
 .header_slogan {
   width: 50%;
   height: 100%;
+  margin: 0;
   padding: 20px;
 }
 
@@ -125,8 +127,11 @@ main {
 .slogan {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
   font-size: 48px;
-  color: #666666;
+  color: #D663CA;
 }
 
 .footer {

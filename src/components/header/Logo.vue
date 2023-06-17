@@ -1,11 +1,9 @@
 <template>
-    <img class="logo" src={{image}} alt="">   
+    <img class="logo" src="../../assets/logo.png" alt="">   
 </template>
 
-<script setup>
-const props = defineProps({
-  image: String, 
-})
+<script>
+
 </script>
 
 <style lang="scss">

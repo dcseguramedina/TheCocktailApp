@@ -1,9 +1,13 @@
 <template>
-    <button class="btn" @click="reloadPage">I'm still thirsty</button>    
+    <button class="btn" @click="reloadPage">{{ text }}</button>    
 </template>
   
 <script>
-
+export default {
+  props: {
+    text: String
+  }
+}
 </script>
   
 <style lang="scss">
