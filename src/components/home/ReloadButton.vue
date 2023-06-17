@@ -6,6 +6,12 @@
 export default {
   props: {
     text: String
+  },
+
+  methods: {
+    reloadPage() {
+      window.location.reload();
+    }
   }
 }
 </script>
