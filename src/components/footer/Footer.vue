@@ -1,8 +1,8 @@
 <template>
     <footer class="footer">
         <div class="footer_text">
-            <Copyright text="© 2023 The Cocktail App. All rights reserved"/>
-        </div>                
+            <Copyright text="© 2023 The Cocktail App. All rights reserved" />
+        </div>
     </footer>
 </template>
 
@@ -10,7 +10,9 @@
 import Copyright from './Copyright.vue'
 
 export default {
-  components: { Copyright }
+    components: {
+        Copyright
+    }
 }
 </script>
 

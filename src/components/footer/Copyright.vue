@@ -1,11 +1,13 @@
 <template>
-    <p class="copyright">{{text}}</p>
+    <p class="copyright">{{ text }}</p>
 </template>
 
-<script setup>
-const props = defineProps({
-  text: String, 
-})
+<script>
+export default {
+    props: {
+        text: String
+    },
+}
 </script>
 
 <style lang="scss">

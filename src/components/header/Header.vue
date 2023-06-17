@@ -4,8 +4,8 @@
             <Logo />
         </div>
         <div class="header_slogan">
-            <Slogan title="The Cocktail App"/>
-        </div>              
+            <Slogan title="The Cocktail App" />
+        </div>
     </header>
 </template>
 
@@ -14,7 +14,10 @@ import Logo from './Logo.vue'
 import Slogan from './Slogan.vue'
 
 export default {
-  components: { Logo, Slogan }
+    components: {
+        Logo,
+        Slogan
+    }
 }
 </script>
 

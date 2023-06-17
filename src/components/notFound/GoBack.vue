@@ -1,13 +1,13 @@
 <template>
-    <h1 class="back">{{msg}}</h1>
+  <h1 class="back">{{ text }}</h1>
 </template>
 
-<script setup>
-const props = defineProps({
-  msg: String
-})
+<script>
+export default {
+  props: {
+    text: String,
+  }
+}
 </script>
 
-<style>
-
-</style>
+<style></style>

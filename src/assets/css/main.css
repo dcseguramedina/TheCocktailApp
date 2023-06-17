@@ -171,9 +171,14 @@ main {
 .gallery {
   width: 100%;
   height: auto;
+  padding: 25px;
   border-style: none;
   border-radius: 10px;
   background-image: linear-gradient(to top, #D663CA, #F1C762);
+}
+
+.gallery_title {
+  color: #666666;
 }
 
 .gallery_cards {

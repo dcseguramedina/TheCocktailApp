@@ -1,10 +1,15 @@
 .gallery {
     width: 100%; 
-    height: auto;    
+    height: auto;  
+    padding: 25px;  
 
     border-style: none;
     border-radius: 10px;
     background-image: $background-image-gradient;
+}
+
+.gallery_title {
+    color:$font-text-colour-gray;
 }
 
 .gallery_cards {

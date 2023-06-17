@@ -1,7 +1,7 @@
 <template>
     <div class="card_template">
         <slot></slot>
-    </div>    
+    </div>
 </template>
 
 <script>

@@ -1,5 +1,6 @@
 <template>
     <section class="gallery">
+        <h2 class="gallery_title">{{ title }}</h2>
         <div class="gallery_cards">
             <Card>
                 <div class="card" v-for="drink in listOfDrinks" :key="drink.id">
@@ -10,7 +11,7 @@
                         </div>
                         <div class="card_description" v-if="!display_div">
                             <p>{{ drink.category }}</p>
-                            <p>Ingredients</p>
+                            <p>ingredients</p>
                             <p>{{ drink.instructions }}</p>
                         </div>
                     </div>
@@ -26,10 +27,14 @@ import Card from '../home/Card.vue';
 import Drink from '../../models/Drink';
 import ReloadButton from '../home/ReloadButton.vue';
 
-
 export default {
-    components: { Card, ReloadButton },
-
+    components: {
+        Card,
+        ReloadButton
+    },
+    props: {
+        title: String
+    },
     data() {
         return {
             listOfDrinks: []
@@ -50,6 +55,9 @@ export default {
                                 data.drinks[0].strInstructions
                             )
                         )
+                    })
+                    .catch((error) => {
+                        alert(`Une erreur s'est produite. Veuillez réessayer`);
                     })
             }
         }

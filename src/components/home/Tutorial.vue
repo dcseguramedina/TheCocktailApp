@@ -1,14 +1,17 @@
 <template>
     <div class="tutorial">
-        <h2 class="tutorial_text">Let's try something new. You just need to bring your good energy and we will find some cocktails for you. If you don't like our choices, you can always go for another round and enjoy the party.</h2><br>
-        <h2 class="tutorial_text">Are you ready?</h2>
+        <h2 class="tutorial_text">{{ text }}</h2>
+        <h2 class="tutorial_text">{{ question }}</h2>
     </div>   
 </template>
   
-<script setup>
-// const props = defineProps({
-//   tutorialText: String, 
-// })
+<script>
+export default {
+  props: {
+    text: String,
+    question: String
+  }
+}
 </script>
   
 <style lang="scss">

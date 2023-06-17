@@ -1,13 +1,13 @@
 <template>
-    <h1 class="code">{{msg}}</h1>
+  <h1 class="code">{{ code }}</h1>
 </template>
 
-<script setup>
-const props = defineProps({
-  msg: Number
-})
+<script>
+export default {
+  props: {
+    code: Number,
+  }
+}
 </script>
 
-<style>
-
-</style>
+<style></style>
