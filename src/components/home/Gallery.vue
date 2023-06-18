@@ -5,13 +5,22 @@
             <Card>
                 <div class="card" v-for="drink in listOfDrinks" :key="drink.id">
                     <img class="card_image" :src="drink.image" alt="">
+                    <div class="card_title">
+                        <h3>{{ drink.title }}</h3>
+                        <p>{{ drink.category }}</p>
+                    </div>
                     <div class="card_content">
-                        <div class="card_title">
-                            <h3>{{ drink.title }}</h3>
-                            <p>{{  drink.category }}</p>
-                        </div>
-                        <div class="card_description">
+                        <div class="ingredients">
                             <p><strong>Ingredients:</strong></p>
+                            <ul>
+                                <li>{{ drink.ingredient1 }}</li>
+                                <li>{{ drink.ingredient2 }}</li>
+                                <li>{{ drink.ingredient3 }}</li>
+                                <li>{{ drink.ingredient4 }}</li>
+                                <li>{{ drink.ingredient5 }}</li>
+                            </ul>
+                        </div>
+                        <div class="instructions">
                             <p><strong>Instructions:</strong> {{ drink.instructions }}</p>
                         </div>
                     </div>
@@ -54,6 +63,11 @@ export default {
                                 data.drinks[0].strDrinkThumb,
                                 data.drinks[0].strDrink,
                                 data.drinks[0].strCategory,
+                                data.drinks[0].strIngredient1,
+                                data.drinks[0].strIngredient2,
+                                data.drinks[0].strIngredient3,
+                                data.drinks[0].strIngredient4,
+                                data.drinks[0].strIngredient5,
                                 data.drinks[0].strInstructions
                             )
                         )
@@ -63,9 +77,6 @@ export default {
                     })
             }
         },
-        toggleDiv() {
-            this.display_div = !this.display_div;
-        }
     },
     mounted() {
         this.getDrinks()
