@@ -18,12 +18,12 @@ COPY . .
 # build app for production with minification
 RUN npm run build
 
-#EXPOSE 8080
-#CMD ["http-server", "dist"]
-
 FROM node:lts-alpine as prod-stage
 
 RUN npm install -g http-server
+
 COPY --from=build-stage /app/dist /app
+COPY --from=build-stage /app/public/favicon.png /app
+
 EXPOSE 8080
 CMD ["http-server", "/app"]
