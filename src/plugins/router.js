@@ -9,7 +9,7 @@ const routes = [
         component: Home
     },
     {
-        path: '/:catchAll(.*)',
+        path: '/*',
         name: 'notFound',
         component: NotFound
     }
