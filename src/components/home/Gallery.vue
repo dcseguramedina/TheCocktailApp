@@ -7,9 +7,12 @@
                     <img class="card_image" :src="drink.image" alt="">
                     <div class="card_title">
                         <h3>{{ drink.title }}</h3>
-                        <p>{{ drink.category }}</p>
+                        <p><strong>{{ drink.category }}</strong></p>
                     </div>
                     <div class="card_content">
+                        <div class="instructions">
+                            <p>{{ drink.instructions }}</p>
+                        </div>
                         <div class="ingredients">
                             <p><strong>Ingredients:</strong></p>
                             <ul>
@@ -19,9 +22,6 @@
                                 <li>{{ drink.ingredient4 }}</li>
                                 <li>{{ drink.ingredient5 }}</li>
                             </ul>
-                        </div>
-                        <div class="instructions">
-                            <p><strong>Instructions:</strong> {{ drink.instructions }}</p>
                         </div>
                     </div>
                 </div>
@@ -47,12 +47,10 @@ export default {
     data() {
         return {
             listOfDrinks: [],
-            display_div: false
         }
-
     },
     methods: {
-        getDrinks() {
+        getRandomCocktail() {
             for (let i = 0; i < 3; i++) {
                 fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php')
                     .then(response => response.json())
@@ -79,7 +77,7 @@ export default {
         },
     },
     mounted() {
-        this.getDrinks()
+        this.getRandomCocktail()
     }
 }
 </script>

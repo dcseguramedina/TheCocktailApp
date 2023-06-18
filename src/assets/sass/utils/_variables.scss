@@ -17,13 +17,6 @@ $font-text-colour-white: #FFFFFF;
 // Card animations
 $anim-duration: 500ms;
 $num-bars: 3;
-$anim-delay: ($anim-duration / $num-bars);
-
-// Media Queries
-$breakpoints: (
-    mobile: 576px,
-    tablete: 768px,
-    desktop: 992px,
-    large-desktop: 1200px,
-    x-large-desktop: 1400px
+$anim-delay: (
+    $anim-duration / $num-bars
 );

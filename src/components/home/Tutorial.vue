@@ -1,8 +1,8 @@
 <template>
-    <div class="tutorial">
-        <h2 class="tutorial_text">{{ text }}</h2>
-        <h2 class="tutorial_text">{{ question }}</h2>
-    </div>   
+  <div class="tutorial">
+    <h2 class="tutorial_text">{{ text }}</h2>
+    <h2 class="tutorial_text">{{ question }}</h2>
+  </div>
 </template>
   
 <script>

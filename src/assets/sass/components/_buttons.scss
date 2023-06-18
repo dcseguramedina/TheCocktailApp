@@ -1,15 +1,13 @@
-.btn {  
-    width: auto; 
-    padding: 20px; 
-
+.btn {
+    width: auto;
+    padding: 20px;
     background-image: $background-image-gradient;
     border: none;
     border-radius: 30px;
-      
     font-size: 18px;
-    color: $font-text-colour-white;        
-    cursor: pointer; 
-    @include box-shadow;      
+    color: $font-text-colour-white;
+    cursor: pointer;
+    @include box-shadow;
 }
 
 .btn:hover {

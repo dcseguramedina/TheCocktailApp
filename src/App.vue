@@ -1,6 +1,6 @@
 <template>
     <Header />
-    <router-link :to="{ name: home }"></router-link>
+    <router-link :to="{ name: Home }"></router-link>
     <router-view />
     <Footer />
 </template>

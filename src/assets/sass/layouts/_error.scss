@@ -1,38 +1,31 @@
 .error {
-    width: 100%; 
-    height: auto;  
+    width: 100%;
+    height: auto;
     padding: 25px;
 }
 
 .error_code {
-    width: 100%; 
-     
+    width: 100%;
     padding: 25px;
-
     font-size: 200px;
     color: $font-text-colour-gray;
 }
 
 .error_message {
-    width: 100%; 
-     
+    width: 100%;
     padding: 25px;
-
     font-size: 50px;
     color: $font-text-colour-gray;
 }
 
 .error_go_back {
-    width: 100%; 
-   
+    width: 100%;
     padding: 25px;
-
     font-family: Roboto;
     font-size: 25px;
     color: $font-text-colour-gray;
 }
 
 .error_go_back:hover {
-text-decoration: underline;
+    text-decoration: underline;
 }
-
