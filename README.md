@@ -13,6 +13,7 @@ A Vue application for viewing cocktails ramdonly with the help of TheCocktailDB 
 
 ## Development Instructions
 
-- yarn install
-- yarn dev
-- yarn build
+To run the application in development mode:
+
+### `yarn install`
+### `yarn dev`
