@@ -15,4 +15,4 @@ A Vue application for viewing cocktails ramdonly with the help of TheCocktailDB 
 
 - yarn install
 - yarn dev
- -yarn build
+- yarn build
