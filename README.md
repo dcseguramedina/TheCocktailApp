@@ -1,4 +1,4 @@
-🍹 # The Cocktail App
+# The Cocktail App 🍹
 
 A Vue application for viewing cocktails ramdonly with the help of TheCocktailDB API.
 
