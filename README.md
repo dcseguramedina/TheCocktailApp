@@ -4,12 +4,12 @@ A Vue application for viewing cocktails ramdonly with the help of TheCocktailDB 
 
 ## Technical choise
 
--Vue version: Vue 3
--Built tools: Vite
--SFC la;yout: Options API
--Router: VueRouter 4
--Test: Vitest
--IDE plugins: VS Code (+Volar)
+- Vue version: Vue 3
+- Built tools: Vite
+- SFC la;yout: Options API
+- Router: VueRouter 4
+- Test: Vitest
+- IDE plugins: VS Code (+Volar)
 
 ## Development Instructions
 
