@@ -1,7 +1,18 @@
-# Vue 3 + Vite
+# The Cocktail App
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A Vue application for viewing cocktails ramdonly with the help of TheCocktailDB API.
 
-## Recommended IDE Setup
+## Technical choise
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+-Vue version: Vue 3
+-Built tools: Vite
+-SFC la;yout: Options API
+-Router: VueRouter 4
+-Test: Vitest
+-IDE plugins: VS Code (+Volar)
+
+## Development Instructions
+
+- yarn install
+- yarn dev
+ -yarn build
